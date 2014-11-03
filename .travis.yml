@@ -11,7 +11,6 @@ script:
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
-  - ...
   - cd bin
   - java -cp .:../../junit.jar HelloMondeTest
   - cd ../OPTIweb/test
