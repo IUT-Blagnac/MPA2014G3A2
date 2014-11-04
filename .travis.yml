@@ -14,6 +14,7 @@ script:
   - ls -alF
   - cd sprint_5
   - javac -cp .:./bin -d ./bin ./src/HelloMonde.java
+  - javac -cp .:./bin:../junit.jar -d ./bin ./src/HelloMondeTest.java
   - cd bin
   - java -cp .:../../junit.jar HelloMondeTest
   - cd ../OPTIweb/test
