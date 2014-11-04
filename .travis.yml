@@ -1,23 +1,10 @@
-before_install:
-  - wget http://algec.iut-blagnac.fr/~jmi/MPA/src/junit.jar
-  - "sudo apt-get install graphviz 2>&1 | tail -n 2"
-  - wget http://algec.iut-blagnac.fr/~jmi/MPA/src/plantuml.jar
-  - hg clone -r 8.6.7 https://asciidoc.googlecode.com/hg/ asciidoc-8.6.7
 language: java
 script:
-  - casperjs --version
+  - java -version
+  - javac -version
+  - python -V
+  - phantomjs -v
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
   - javac -cp .:./bin -d ./bin ./src/HelloMonde.java
-  - javac -cp .:./bin:../junit.jar -d ./bin ./src/HelloMondeTest.java
-  - cd bin
-  - java -cp .:../../junit.jar HelloMondeTest
-  - cd ../OPTIweb/test
-  - cp OPTIwebprof.html /tmp/OPTIweb.html
-  - casperjs test casperAccueil.js
-  - casperjs test casperCredits.js
-  - casperjs test casperIntervenants.js
-  - casperjs test casperProjets.js
-  - casperjs test casperEtudiants.js
-  - casperjs test casperSujets.js
