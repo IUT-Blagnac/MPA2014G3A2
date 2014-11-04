@@ -12,7 +12,7 @@ var APP_VERSION = '0.1' ;
 // Test data ////////////////////////////////////
 var GROUPES=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q"];
 var SUJETS=[
-["[ApexEComm]","Application et tutoriel Oracle Apex pour un site d'e-commerce"],
+["ApexEComm","Application et tutoriel Oracle Apex pour un site d'e-commerce"],
 ["Archeologie","Groupe de recherche Chasséen Méridional"],
 ["Architekt","Architekt"],
 ["BDM NoSQL","Développement d’un logiciel de conception d’une base de données multidimensionnelles"],
