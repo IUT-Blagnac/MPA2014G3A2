@@ -156,17 +156,12 @@ casper.thenClick({
             this.test.comment('');
             this.test.comment("Seul JMB est visible");
             for (var indice=0;indice<INTERVENANTS.length;indice+=1){
-                if (INTERVENANTS[indice].nom != 'BRUEL') {
-                    this.test.assertNotVisible({
-                        type: 'xpath',
-                        path: '//ul[@id="listeintervenants"]/li['+(indice+2)+']'
-                    },INTERVENANTS[indice].nom+" non visible");
-                } else {
+
                     this.test.assertVisible({
                         type: 'xpath',
                         path: '//ul[@id="listeintervenants"]/li['+(indice+2)+']'
                     },INTERVENANTS[indice].nom+" ******** visible");
-                }
+                
             }
         // raz search form
         this.then(function(){
