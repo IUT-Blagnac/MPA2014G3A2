@@ -6,7 +6,6 @@ before_script:
   - export PATH=$PATH:$PWD/casperjs-1.0.3/bin/
 language: java
 script:
-  - ...
   - casperjs --version
   - echo Hello from DUT INFO Blagnac
   - ls -alF
