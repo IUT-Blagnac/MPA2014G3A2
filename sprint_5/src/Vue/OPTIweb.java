@@ -16,7 +16,7 @@ public class OPTIweb {
 		BufferedWriter out;
 		
 		try{
-			destination = "sprint_5/OPTIweb/test/OPTIweb.html";
+			destination = "OPTIweb/test/OPTIweb.html";
 			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(destination),"UTF-8"));
 			out.write(contenu);
 			out.close();

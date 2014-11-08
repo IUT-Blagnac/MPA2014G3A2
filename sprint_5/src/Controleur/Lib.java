@@ -29,7 +29,7 @@ public class Lib {
 	}
 
 	public static HashMap [] lireCSV() {
-		String pathFichiers [] = new String [] {"sprint_5/data/etudiants2014_2015.csv", "sprint_5/data/sujets2014_2015.csv", "sprint_5/data/intervenants2014_2015.csv", "sprint_5/data/projets2014_2015.csv", "sprint_5/data/voeux2014_2015.csv"};
+		String pathFichiers [] = new String [] {"data/etudiants2014_2015.csv", "data/sujets2014_2015.csv", "data/intervenants2014_2015.csv", "data/projets2014_2015.csv", "data/voeux2014_2015.csv"};
 		HashMap [] resArray = new HashMap [6];
 
 
