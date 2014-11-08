@@ -213,9 +213,9 @@ public class Pages {
 						+ "</p>"
 						+ "<p>"
 						+ "<b>Client :</b> "
-						+ projetTmp.getEncadrer().getRole().getClient().getNom()
-						+ " "
 						+ projetTmp.getEncadrer().getRole().getClient().getPrenom()
+						+ " "
+						+ projetTmp.getEncadrer().getRole().getClient().getNom()
 						+ "</p>"
 						+ "<p>"
 						+ "<b>Superviseur :</b> "
