@@ -233,7 +233,7 @@ public class Pages {
 					EtuGroupeTmp = (Groupe) ((Etudiant)entryEtu.getValue()).getGroupe();
 					if ( EtuGroupeTmp.equals(projetTmp.getGroupe()) ){
 						tempoStringProjet += ((Etudiant) entryEtu.getValue()).getPrenom()
-								+ " - "
+								+ " "
 								+ ((Etudiant) entryEtu.getValue()).getNom()
 								+ " - ";
 					}
