@@ -1,4 +1,4 @@
-﻿package Controleur;
+package Controleur;
 
 import java.io.*;
 import java.util.HashMap;

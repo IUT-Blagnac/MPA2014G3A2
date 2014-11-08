@@ -1,4 +1,4 @@
-package Modele;
+ï»¿package Modele;
 /**
  * 
  * @author groupe 3A2
@@ -14,7 +14,7 @@ public class Etudiant {
 	
 	/**
 	 * Constructeur de la classe Etudiant
-	 * Initialise  l'objet étudiant
+	 * Initialise  l'objet Ã©tudiant
 	 */
 	public Etudiant (String p_nom, String p_prenom, Groupe p_groupe){
 		this.prenom = p_prenom;
@@ -25,24 +25,24 @@ public class Etudiant {
 	// GETTEUR
 	/**
 	 * 
-	 * Donne le nom de l'étudiant
-	 * @returnn le nom de l'étudiant
+	 * Donne le nom de l'Ã©tudiant
+	 * @returnn le nom de l'Ã©tudiant
 	 */
 	public String getNom(){
 		return this.nom;
 	}
 	/**
 	 * 
-	 * Donne le prenom de l'étudiant
-	 * @returnn le prenom de l'étudiant
+	 * Donne le prenom de l'Ã©tudiant
+	 * @returnn le prenom de l'Ã©tudiant
 	 */
 	public String getPrenom(){
 		return this.prenom;
 	}
 	/**
 	 * 
-	 * Donne le groupe de l'étudiant
-	 * @returnn le groupe de l'étudiant
+	 * Donne le groupe de l'Ã©tudiant
+	 * @returnn le groupe de l'Ã©tudiant
 	 */
 	public Groupe getGroupe(){
 		return this.groupe;
