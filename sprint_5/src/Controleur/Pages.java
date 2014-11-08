@@ -284,9 +284,9 @@ public class Pages {
 				etuTmp =   (Etudiant) entry.getValue();
 
 				tempoStringEtudiant+="<li data-find=\""
-						+ etuTmp.getNom()
-						+ " "
 						+ etuTmp.getPrenom()
+						+ " "
+						+ etuTmp.getNom()
 						+ "\">    <!-- 4 -->"
 						+ "<a href=\"#projets\">"
 						+ etuTmp.getNom()
