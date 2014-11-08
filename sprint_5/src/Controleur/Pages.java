@@ -312,14 +312,14 @@ public class Pages {
 				interTmp =  (Intervenant) entry.getValue();
 
 				tempoStringIntervenant+= "<li data-find=\""
-						+ interTmp.getNom()
-						+ " "
 						+ interTmp.getPrenom()
+						+ " "
+						+ interTmp.getNom()
 						+ "\">    <!-- 4 -->"
 						+ "<a href=\"#projets\">"
-						+ interTmp.getNom()
-						+ " "
 						+ interTmp.getPrenom()
+						+ " "
+						+ interTmp.getNom()
 						+ "<span class=\"ui-li-count\" style=\"right: 120px !important;\" title=\"Client\">"+interTmp.getClient()+"</span>"
 						+ "<span class=\"ui-li-count\" title=\"Superviseur\">"+interTmp.getSuperviseur()+"</span>"
 						+ "</a>"
