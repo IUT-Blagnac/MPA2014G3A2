@@ -29,7 +29,7 @@ script:
   - java -cp .:bin HelloMonde
   - java -cp bin:../junit.jar HelloMondeTest
   - cd OPTIweb/test
-  - cp OPTIwebprof.html /tmp/OPTIweb.html
+  - cp OPTIweb.html /tmp/OPTIweb.html
   - casperjs test casperAccueil.js
   - casperjs test casperCredits.js
   - casperjs test casperEtudiants.js
