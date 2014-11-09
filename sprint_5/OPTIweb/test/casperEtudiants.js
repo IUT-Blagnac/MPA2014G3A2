@@ -127,12 +127,12 @@ casper.thenClick({
                     this.test.assertNotVisible({
                         type: 'xpath',
                         path: '//ol[@id="listeetudiants"]/li['+(indice+2)+']'
-                    },ETUDIANTS[indice].nom+' '+ETUDIANTS[indice].prenom+" non visible");
+                    },ETUDIANTS[indice].nom+' '+ETUDIANTS[indice].prenom+" non visible "+(indice+2));
                 } else {
                     this.test.assertVisible({
                         type: 'xpath',
                         path: '//ol[@id="listeetudiants"]/li['+(indice+2)+']'
-                    },ETUDIANTS[indice].nom+' '+ETUDIANTS[indice].prenom+" ******** visible");
+                    },ETUDIANTS[indice].nom+' '+ETUDIANTS[indice].prenom+" ******** visible "+(indice+2));
                 }
             }
         // raz search form
