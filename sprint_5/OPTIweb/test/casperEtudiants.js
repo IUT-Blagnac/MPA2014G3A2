@@ -111,7 +111,7 @@ casper.thenClick({
         this.test.comment("Page Etudiants : rechercher LOPEZ");
         this.test.comment('##############');
         this.fill('#etudiants div form', {
-            'etudiant': 'LOPEZ'
+            'etudiant': 'LIEU'
         }, false);  // do not submit
         this.waitWhileVisible({
                     type: 'xpath',
@@ -123,7 +123,7 @@ casper.thenClick({
             this.test.comment('');
             this.test.comment("Seul LOPEZ Nathan est visible");
             for (var indice=0;indice<ETUDIANTS.length;indice+=1){
-                if (ETUDIANTS[indice].nom != 'LOPEZ' && ETUDIANTS[indice].nom != 'LARROUY') {
+                if (ETUDIANTS[indice].nom != 'LIEU') {
                     this.test.assertNotVisible({
                         type: 'xpath',
                         path: '//ol[@id="listeetudiants"]/li['+(indice+2)+']'
