@@ -204,7 +204,7 @@ public class Pages {
 
 			for ( Entry entry : tmpHash.entrySet()){
 				projetTmp = (Projet) entry.getValue();
-				tempoStringProjet += "<li> "
+				tempoStringProjet += "<li>"
 						+ "<p>"
 						+ "<b>["
 						+ projetTmp.getSujet().getNom()
@@ -213,9 +213,9 @@ public class Pages {
 						+ "</p>"
 						+ "<p>"
 						+ "<b>Client :</b> "
-						+ projetTmp.getEncadrer().getRole().getClient().getPrenom()
-						+ " "
 						+ projetTmp.getEncadrer().getRole().getClient().getNom()
+						+ " "
+						+ projetTmp.getEncadrer().getRole().getClient().getPrenom()
 						+ "</p>"
 						+ "<p>"
 						+ "<b>Superviseur :</b> "
@@ -226,7 +226,7 @@ public class Pages {
 						+ "<p>"
 						+ "<b>Groupe " 
 						+ projetTmp.getGroupe().getLibelle() 
-						+ " :</b>";
+						+ " : </b>";
 
 				Groupe EtuGroupeTmp;
 				for (Entry entryEtu : tempEtu.entrySet()){
@@ -312,14 +312,14 @@ public class Pages {
 				interTmp =  (Intervenant) entry.getValue();
 
 				tempoStringIntervenant+= "<li data-find=\""
-						+ interTmp.getPrenom()
-						+ " "
 						+ interTmp.getNom()
+						+ " "
+						+ interTmp.getPrenom()
 						+ "\">    <!-- 4 -->"
 						+ "<a href=\"#projets\">"
-						+ interTmp.getPrenom()
-						+ " "
 						+ interTmp.getNom()
+						+ " "
+						+ interTmp.getPrenom()
 						+ "<span class=\"ui-li-count\" style=\"right: 120px !important;\" title=\"Client\">"+interTmp.getClient()+"</span>"
 						+ "<span class=\"ui-li-count\" title=\"Superviseur\">"+interTmp.getSuperviseur()+"</span>"
 						+ "</a>"

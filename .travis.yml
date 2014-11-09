@@ -19,7 +19,7 @@ script:
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
-  - javac -cp .:bin -d bin src/Modele/*.java src/Controleur/*.java src/Vue/*.java
+  - javac -encoding UTF-8 -cp .:bin -d bin src/Modele/*.java src/Controleur/*.java src/Vue/*.java
   - javac -cp .:./bin:../junit.jar -d ./bin ./src/HelloMondeTest.java
   - javac -cp .:bin -d ./bin ./src/HelloMonde.java
   - java -cp .:bin Vue.OPTIweb

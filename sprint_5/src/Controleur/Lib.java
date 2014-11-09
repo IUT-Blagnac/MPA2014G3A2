@@ -62,7 +62,7 @@ public class Lib {
 					}else if(i == 1){
 						arraySuj.put(Integer.parseInt(chainon[0]) ,new Sujet (chainon[0], chainon[1], chainon[2], 10 ));
 					}else if(i == 2){
-						arrayInt.put(Integer.parseInt(chainon[0]), new Intervenant (chainon[1], chainon[2] ));
+						arrayInt.put(Integer.parseInt(chainon[0]), new Intervenant (chainon[2], chainon[1] ));
 					}else if (i == 3){
 						arrayProj.put(Integer.parseInt(chainon[0]), new Projet (arrayGrpe.get(chainon[1]), arraySuj.get(Integer.parseInt(chainon[2])), new Encadrer(arrayInt.get(Integer.parseInt(chainon[3])), arrayInt.get(Integer.parseInt(chainon[4])), null) ));
 						arrayInt.get(Integer.parseInt(chainon[3])).setClient();

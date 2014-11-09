@@ -13,7 +13,7 @@ public class Encadrer {
 private Role role;
 
 	public Encadrer(Intervenant p_client, Intervenant p_superviseur, Intervenant p_support_technique){
-		this.role = new Role(p_superviseur, p_client, p_support_technique);
+		this.role = new Role(p_client, p_superviseur, p_support_technique);
 	}
 	
 	/**
