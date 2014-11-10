@@ -123,7 +123,7 @@ casper.thenClick({
             this.test.comment('');
             this.test.comment("Seul LOPEZ Nathan est visible");
             for (var indice=0;indice<ETUDIANTS.length;indice+=1){
-                if (ETUDIANTS[indice].nom != 'LIEU') {
+                if (ETUDIANTS[indice].nom != 'LOPEZ') {
                     this.test.assertNotVisible({
                         type: 'xpath',
                         path: '//ol[@id="listeetudiants"]/li['+(indice+2)+']'

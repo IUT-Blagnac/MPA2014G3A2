@@ -38,13 +38,4 @@ script:
   - casperjs test casperIntervenants.js
   - casperjs test casperProjets.js
   - casperjs test casperSujets.js
-  
- deploy:
-	provider: releases
-	api-key: "d9f3827522bbff2a0b2384424e7ac1eaef1c16da"
-	file: "./sprint_5/OPTIweb/test/tmp/OPTIweb.html"
-	skip_cleanup: true
-	on:
-		tags: true
-		all_branches: true
 	
