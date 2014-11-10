@@ -38,4 +38,3 @@ script:
   - casperjs test casperIntervenants.js
   - casperjs test casperProjets.js
   - casperjs test casperSujets.js
-	
