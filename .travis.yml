@@ -9,6 +9,8 @@ before_script:
   - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
 language: java
 script:
+  - git config --global user.email "ouraiios@gmail.com"
+  - git config --global user.user "ouraios"
   - java -version
   - javac -version
   - python -V
@@ -36,3 +38,13 @@ script:
   - casperjs test casperIntervenants.js
   - casperjs test casperProjets.js
   - casperjs test casperSujets.js
+  
+ deploy:
+	provider: releases
+	api-key: "d9f3827522bbff2a0b2384424e7ac1eaef1c16da"
+	file: "./sprint_5/OPTIweb/test/tmp/OPTIweb.html"
+	skip_cleanup: true
+	on:
+		tags: true
+		all_branches: true
+	
